@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Poker Hand Chalange</h1>
+    <form >
+        <label for="handinput">Enter your hand </label><input type="text" maxlength="20" id="handinput" name="handinput"></input>
+        <br /> <input type="submit" value="Submit">
+    </form>
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <h2>
+            @Html.Raw(Model.Message)
+        </h2>
+    }
+</div>

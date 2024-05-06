@@ -8,7 +8,7 @@
         public bool assign(string r, string s)
         {
             bool valid = true;
-            switch(s)
+            switch(s.ToUpper())
             {
                 case "H":
                     Suit = Suits.Hearts;
@@ -41,7 +41,7 @@
             }
             else
             {
-                switch(r)
+                switch(r.ToUpper())
                 {
                     case "J":
                         Rank = Ranks.Jack;
